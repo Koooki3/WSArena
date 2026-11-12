@@ -1,0 +1,33 @@
+0,1,2,3,4
+"Tier-0 (c02, c03, c04)",c02-avoid/s1-weak_axis/seed2,sonnet55-medium,0.06999999999999999,0.06500000000000002
+"Tier-0 (c02, c03, c04)",c02-avoid/s2/seed2,sonnet55-medium,0.37,0.06499999999999997
+"Tier-0 (c02, c03, c04)",c02-avoid/s3/seed2,sonnet55-medium,0.0,0.0
+"Tier-0 (c02, c03, c04)",c03-hold/s1-weak_axis/seed2,sonnet55-medium,0.4,0.4
+"Tier-0 (c02, c03, c04)",c03-hold/s2/seed2,sonnet55-medium,0.44999999999999996,0.44999999999999996
+"Tier-0 (c02, c03, c04)",c03-hold/s3/seed2,sonnet55-medium,0.0,0.18000000000000005
+"Tier-0 (c02, c03, c04)",c04-delay/s1-weak_axis/seed2,sonnet55-medium,0.45999999999999996,0.45999999999999996
+"Tier-0 (c02, c03, c04)",c04-delay/s3/seed2,sonnet55-medium,0.1150000000000001,0.0
+"Tier-0 (c02, c03, c04)",c02-avoid/s1-weak_axis/seed2,opus55-medium,0.7150000000000001,0.26999999999999996
+"Tier-0 (c02, c03, c04)",c02-avoid/s2/seed2,opus55-medium,0.735,0.30000000000000004
+"Tier-0 (c02, c03, c04)",c02-avoid/s3/seed2,opus55-medium,0.125,0.135
+"Tier-0 (c02, c03, c04)",c03-hold/s1-weak_axis/seed2,opus55-medium,0.4,0.4
+"Tier-0 (c02, c03, c04)",c03-hold/s2/seed2,opus55-medium,0.43999999999999995,0.44999999999999996
+"Tier-0 (c02, c03, c04)",c03-hold/s3/seed2,opus55-medium,0.18000000000000005,0.17000000000000004
+"Tier-0 (c02, c03, c04)",c04-delay/s1-weak_axis/seed2,opus55-medium,0.45999999999999996,0.45999999999999996
+"Tier-0 (c02, c03, c04)",c04-delay/s3/seed2,opus55-medium,0.43500000000000005,0.385
+Meta-World,mw-peginsert/s1-weak_axis/seed2,sonnet55-medium,0.365,0.0
+Meta-World,mw-peginsert/s3/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-pickplace/s1-bias_shift/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-pickplace/s2/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-pickplace/s3/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-push/s1-weak_axis/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-push/s2/seed2,sonnet55-medium,0.16000000000000003,0.0
+Meta-World,mw-push/s3/seed2,sonnet55-medium,0.0,0.0
+Meta-World,mw-peginsert/s1-weak_axis/seed2,opus55-medium,0.16500000000000004,0.235
+Meta-World,mw-peginsert/s3/seed2,opus55-medium,0.0,0.0
+Meta-World,mw-pickplace/s1-bias_shift/seed2,opus55-medium,0.11999999999999994,-0.05500000000000005
+Meta-World,mw-pickplace/s2/seed2,opus55-medium,0.0,-0.040000000000000036
+Meta-World,mw-pickplace/s3/seed2,opus55-medium,0.0,0.0
+Meta-World,mw-push/s1-weak_axis/seed2,opus55-medium,0.0,0.0
+Meta-World,mw-push/s2/seed2,opus55-medium,0.08999999999999997,0.12
+Meta-World,mw-push/s3/seed2,opus55-medium,0.0,0.0

@@ -1,0 +1,110 @@
+{
+ "c01-reach": {
+  "n_hidden": 24,
+  "params_id": {
+   "T": 45,
+   "damping": 0.1,
+   "delay": 3,
+   "fmax": 0.8,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "reach",
+   "mass": 1.0,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  },
+  "params_ood": {
+   "T": 45,
+   "damping": 0.088,
+   "delay": 3,
+   "fmax": 0.764,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "reach",
+   "mass": 1.12,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  }
+ },
+ "c02-avoid": {
+  "n_hidden": 24,
+  "params_id": {
+   "T": 60,
+   "damping": 0.1,
+   "delay": 3,
+   "fmax": 1.0,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "avoid",
+   "mass": 1.0,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  },
+  "params_ood": {
+   "T": 60,
+   "damping": 0.0675,
+   "delay": 3,
+   "fmax": 0.87,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "avoid",
+   "mass": 1.325,
+   "obstacle_radius": 0.219,
+   "speed_tol": 0.2
+  }
+ },
+ "c03-hold": {
+  "n_hidden": 24,
+  "params_id": {
+   "T": 60,
+   "damping": 0.1,
+   "delay": 3,
+   "fmax": 0.8,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "hold",
+   "mass": 1.0,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  },
+  "params_ood": {
+   "T": 60,
+   "damping": 0.084,
+   "delay": 3,
+   "fmax": 0.752,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "hold",
+   "mass": 1.16,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  }
+ },
+ "c04-delay": {
+  "n_hidden": 24,
+  "params_id": {
+   "T": 40,
+   "damping": 0.1,
+   "delay": 5,
+   "fmax": 0.8,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "delay",
+   "mass": 1.0,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  },
+  "params_ood": {
+   "T": 40,
+   "damping": 0.1,
+   "delay": 6,
+   "fmax": 0.8,
+   "goal_radius": 0.08,
+   "hold_steps": 25,
+   "kind": "delay",
+   "mass": 1.0,
+   "obstacle_radius": 0.18,
+   "speed_tol": 0.2
+  }
+ }
+}

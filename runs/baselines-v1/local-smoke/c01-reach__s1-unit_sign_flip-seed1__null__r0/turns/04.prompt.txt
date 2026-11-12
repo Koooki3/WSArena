@@ -1,0 +1,20 @@
+ROUND 3 RESULT. Edit parsing: {"block_found": true, "statements": 0, "applied": 0, "skipped": 0, "skipped_reasons": []}
+Development report for the edited policy:
+{
+ "round": 3,
+ "episodes_used": 16,
+ "success_rate": 0.1875,
+ "mean_return": -2.0072,
+ "failures": {
+  "near_unsettled": 13
+ },
+ "diagnostic": {
+  "mean_final_dist": 0.126,
+  "mean_final_speed": 0.0344,
+  "action_saturation_rate": 0.0187,
+  "mean_action_jerk": 0.0482
+ },
+ "remaining_rounds": 1
+}
+
+Give your round-4 reply (analysis + one edits block).

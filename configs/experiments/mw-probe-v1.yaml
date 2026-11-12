@@ -1,0 +1,22 @@
+# P3 feasibility probe (4 runs, seed-1 checkpoints, NOT part of any analysis): prompt length, truncation, completion, cost.
+exp_id: mw-probe-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: 64000
+cells:
+- ckpt_ids:
+  - mw-push/s2/seed1
+  - mw-pickplace/s2/seed1
+arms:
+- key: sonnet55-medium
+  provider: claude-cli
+  model: claude-sonnet-5-5
+  effort: medium
+- key: opus55-medium
+  provider: claude-cli
+  model: claude-opus-5-5
+  effort: medium

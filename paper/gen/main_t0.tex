@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Tier-0, pre-registered comparisons (16 checkpoints; L2 = faulty or failing checkpoints, 10; S3 = healthy, 6). Differences in hidden success rate; Holm correction over the twelve tests.}
+\label{tab:t0}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrcr@{}}
+\toprule
+Editor & Contrast & Diff & 95\% CI & Holm $p$ \\
+\midrule
+Sonnet med. & vs.\ random & 0.592 & [0.510, 0.666] & 0.0236 \\
+Sonnet med. & vs.\ closed form & 0.136 & [$-$0.092, 0.375] & 0.5014 \\
+Sonnet med. & S3 $-$ L2 & $-$0.243 & [$-$0.339, $-$0.185] & 0.0448 \\
+Sonnet high & vs.\ random & 0.757 & [0.695, 0.821] & 0.0236 \\
+Sonnet high & vs.\ closed form & 0.300 & [0.074, 0.544] & 0.3778 \\
+Sonnet high & S3 $-$ L2 & $-$0.433 & [$-$0.513, $-$0.362] & 0.0048 \\
+Opus med. & vs.\ random & 0.746 & [0.659, 0.818] & 0.0236 \\
+Opus med. & vs.\ closed form & 0.290 & [0.078, 0.508] & 0.3077 \\
+Opus med. & S3 $-$ L2 & $-$0.252 & [$-$0.370, $-$0.135] & 0.1164 \\
+Opus high & vs.\ random & 0.696 & [0.620, 0.786] & 0.0236 \\
+Opus high & vs.\ closed form & 0.240 & [0.010, 0.521] & 0.5014 \\
+Opus high & S3 $-$ L2 & $-$0.239 & [$-$0.420, $-$0.087] & 0.3077 \\
+\bottomrule
+\end{tabular}
+\end{table}

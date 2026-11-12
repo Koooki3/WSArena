@@ -1,0 +1,9 @@
+arm,status,share
+Sonnet 5.5 · medium,valid_changed,0.34375
+Sonnet 5.5 · medium,empty_block,0.65625
+Sonnet 5.5 · high,valid_changed,0.53125
+Sonnet 5.5 · high,empty_block,0.46875
+Opus 5.5 · medium,valid_changed,0.5625
+Opus 5.5 · medium,empty_block,0.4375
+Opus 5.5 · high,valid_changed,0.53125
+Opus 5.5 · high,empty_block,0.46875

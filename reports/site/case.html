@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WSArena · Case study</title><style>
+:root{--bg:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--rule:#e1e0d9;--accent:#2a78d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--rule:#2c2c2a;--accent:#3987e5}}
+:root[data-theme=dark]{--bg:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--rule:#2c2c2a;--accent:#3987e5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+header,main,footer{max-width:980px;margin:0 auto;padding:0 16px}header{padding-top:28px}
+nav{display:flex;gap:18px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding:10px 0 12px;margin-bottom:8px}nav a{color:var(--ink2);text-decoration:none;font-size:14px}nav a.on{color:var(--ink);font-weight:600;border-bottom:2px solid var(--accent)}
+h1{font-size:30px;line-height:1.2;margin:18px 0 6px}h2{font-size:21px;margin:38px 0 8px}h3{font-size:16px;margin:22px 0 4px}p,li{color:var(--ink2)}.lede{font-size:17px;color:var(--ink2)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.tag{font-size:12px;border:1px solid var(--rule);border-radius:99px;padding:2px 10px;color:var(--ink2);background:var(--surface)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}.kpi{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:12px 14px}.kpi b{display:block;font-size:30px;color:var(--ink);line-height:1.1}.kpi span{font-size:13px;color:var(--ink2)}
+figure{margin:18px 0;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:10px}figure img{width:100%;height:auto;display:block}figcaption{font-size:13.5px;color:var(--ink2);padding:8px 4px 2px}figcaption b{color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0;background:var(--surface)}th,td{border:1px solid var(--rule);padding:6px 9px;text-align:left;vertical-align:top}th{color:var(--ink);background:var(--bg)}td{color:var(--ink2)}
+.note{border-left:3px solid var(--accent);background:var(--surface);padding:8px 14px;margin:16px 0;color:var(--ink2);font-size:14.5px}.pending{border-left-color:var(--muted)}code,pre{font:13px ui-monospace,monospace;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:1px 5px}pre{padding:10px;overflow:auto}
+footer{padding:30px 16px 50px;color:var(--muted);font-size:13px}.btn{font-size:13px;border:1px solid var(--rule);background:var(--surface);color:var(--ink2);border-radius:6px;padding:3px 10px;cursor:pointer}
+</style></head><body><header><nav><a href="index.html" class="">Overview</a><a href="details.html" class="">Benchmark details</a><a href="results.html" class="">Results</a><a href="case.html" class="on">Case study</a><a href="repro.html" class="">Reproducibility</a><span style="flex:1"></span>
+<button class="btn" onclick="var r=document.documentElement;r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'">light / dark</button></nav></header>
+<main>
+<h1>Case study: one planted fault, three outcomes</h1>
+<p>Failure → diagnosis → repair → result, on a single checkpoint. The unedited policy reaches 8 of 12 hidden goals; restoring the corrupted output column (oracle) or refitting the output layer from expert labels (closed form) reaches 12 of 12 — with very different footprints.</p>
+<figure id="FIG-14"><picture><source media="(prefers-color-scheme: dark)" srcset="../figures/dark/FIG-14.png"><img src="../figures/light/FIG-14.png" alt="Case study: one planted fault, three outcomes" loading="lazy"></picture><figcaption><b>FIG-14 · Case study: one planted fault, three outcomes.</b> 案例（c01-reach，S1 weak_axis 植入故障，隐藏 ID 前 12 个 episode）：上排=三个策略的轨迹（○起点，◆目标；实线=成功，×=失败）；下排=补丁相对基线的输出层 W3 差异。神谕只改被腐蚀的那一列；闭式解重写整个输出层。  <a href="../figures/light/FIG-14.svg">svg</a> · <a href="../figures/data/FIG-14.csv">table view (csv)</a></figcaption></figure>
+<div class="note pending">A natural-failure (S2) case and an LLM case are added when the corresponding runs exist.</div>
+</main><footer>WSArena · contract v11 · source 43f05e80 · built 2026-11-07 06:10 (+08) · local build, not published ·
+figures: <a href="../FIGURES_INDEX.md">index</a></footer></body></html>

@@ -1,0 +1,38 @@
+exp_id: gpt-scale-v1-w128
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: null
+order: class_interleave
+cells:
+- ckpt_ids:
+  - c02-avoid@w128/s1-weak_axis/seed2
+  - c02-avoid@w128/s2/seed2
+  - c02-avoid@w128/s3/seed2
+  - c02-avoid@w128/s1-weak_axis/seed3
+  - c02-avoid@w128/s2/seed3
+  - c02-avoid@w128/s3/seed3
+arms:
+- key: gpt-sol61-medium
+  provider: codex-cli
+  model: gpt-6.1-sol
+  effort: medium
+- key: gpt-sol61-high
+  provider: codex-cli
+  model: gpt-6.1-sol
+  effort: high
+- key: gpt-astra6-medium
+  provider: codex-cli
+  model: gpt-6-astra
+  effort: medium
+- key: gpt-astra6-high
+  provider: codex-cli
+  model: gpt-6-astra
+  effort: high
+source_config: configs/experiments/scale-v1-w128.yaml
+source_sha256: 7a7bda090bed4c831a2a71b321bec1bfee72350e26d55e1422ec89c896b00126
+status: candidate_not_preregistered
+output_cap_policy: U14

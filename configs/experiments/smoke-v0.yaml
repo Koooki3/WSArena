@@ -1,0 +1,13 @@
+# E3 cost smoke: ONE run (Sonnet 5.5 medium, c01 S1 weak_axis seed1, R=2). Purpose: measure tokens, latency, quota %.
+# Output is NOT used in any main analysis (PREREG §8).
+exp_id: smoke-v0
+protocol: WSP-Native
+rounds: 2
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: 32000
+select: {tasks: [c01-reach], classes: [S1], kinds: [weak_axis], seeds: [1]}
+arms:
+  - {key: sonnet55-medium, provider: claude-cli, model: claude-sonnet-5-5, effort: medium}

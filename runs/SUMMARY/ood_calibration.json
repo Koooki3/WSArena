@@ -1,0 +1,526 @@
+{
+ "c01-reach": {
+  "n_ckpts": 6,
+  "id_sr": 0.5341666666666667,
+  "grid": [
+   {
+    "s": 0.05,
+    "ood_sr": 0.4291666666666667,
+    "gap": 0.10499999999999998,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.04,
+     "damping": 0.096,
+     "fmax": 0.788,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.1,
+    "ood_sr": 0.3416666666666666,
+    "gap": 0.19250000000000006,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.08,
+     "damping": 0.092,
+     "fmax": 0.776,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.15,
+    "ood_sr": 0.2558333333333333,
+    "gap": 0.2783333333333334,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.12,
+     "damping": 0.08800000000000001,
+     "fmax": 0.764,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.2,
+    "ood_sr": 0.17750000000000002,
+    "gap": 0.3566666666666667,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.1600000000000001,
+     "damping": 0.084,
+     "fmax": 0.752,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.35,
+    "ood_sr": 0.050833333333333335,
+    "gap": 0.48333333333333334,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.28,
+     "damping": 0.07200000000000001,
+     "fmax": 0.7160000000000001,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.5,
+    "ood_sr": 0.015,
+    "gap": 0.5191666666666667,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.4,
+     "damping": 0.060000000000000005,
+     "fmax": 0.68,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.65,
+    "ood_sr": 0.0008333333333333334,
+    "gap": 0.5333333333333333,
+    "expert_ood": 0.995,
+    "params": {
+     "mass": 1.52,
+     "damping": 0.048,
+     "fmax": 0.644,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.8,
+    "ood_sr": 0.0,
+    "gap": 0.5341666666666667,
+    "expert_ood": 0.875,
+    "params": {
+     "mass": 1.6400000000000001,
+     "damping": 0.036000000000000004,
+     "fmax": 0.6080000000000001,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 1.0,
+    "ood_sr": 0.0,
+    "gap": 0.5341666666666667,
+    "expert_ood": 0.525,
+    "params": {
+     "mass": 1.8,
+     "damping": 0.020000000000000004,
+     "fmax": 0.56,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   }
+  ],
+  "choice_s": 0.15,
+  "choice_params": {
+   "mass": 1.12,
+   "damping": 0.08800000000000001,
+   "fmax": 0.764,
+   "obstacle_radius": 0.18,
+   "delay": 3
+  }
+ },
+ "c02-avoid": {
+  "n_ckpts": 6,
+  "id_sr": 0.5,
+  "grid": [
+   {
+    "s": 0.05,
+    "ood_sr": 0.4533333333333333,
+    "gap": 0.04666666666666669,
+    "expert_ood": 0.745,
+    "params": {
+     "mass": 1.025,
+     "damping": 0.0975,
+     "fmax": 0.99,
+     "obstacle_radius": 0.183,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.1,
+    "ood_sr": 0.4166666666666667,
+    "gap": 0.08333333333333331,
+    "expert_ood": 0.74,
+    "params": {
+     "mass": 1.05,
+     "damping": 0.095,
+     "fmax": 0.98,
+     "obstacle_radius": 0.186,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.15,
+    "ood_sr": 0.37666666666666665,
+    "gap": 0.12333333333333335,
+    "expert_ood": 0.715,
+    "params": {
+     "mass": 1.075,
+     "damping": 0.0925,
+     "fmax": 0.97,
+     "obstacle_radius": 0.189,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.2,
+    "ood_sr": 0.3441666666666667,
+    "gap": 0.15583333333333332,
+    "expert_ood": 0.7,
+    "params": {
+     "mass": 1.1,
+     "damping": 0.09,
+     "fmax": 0.96,
+     "obstacle_radius": 0.192,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.35,
+    "ood_sr": 0.28583333333333333,
+    "gap": 0.21416666666666667,
+    "expert_ood": 0.63,
+    "params": {
+     "mass": 1.175,
+     "damping": 0.0825,
+     "fmax": 0.93,
+     "obstacle_radius": 0.20099999999999998,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.5,
+    "ood_sr": 0.24000000000000002,
+    "gap": 0.26,
+    "expert_ood": 0.585,
+    "params": {
+     "mass": 1.25,
+     "damping": 0.07500000000000001,
+     "fmax": 0.9,
+     "obstacle_radius": 0.21,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.65,
+    "ood_sr": 0.21,
+    "gap": 0.29000000000000004,
+    "expert_ood": 0.53,
+    "params": {
+     "mass": 1.325,
+     "damping": 0.0675,
+     "fmax": 0.87,
+     "obstacle_radius": 0.219,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.8,
+    "ood_sr": 0.17833333333333334,
+    "gap": 0.32166666666666666,
+    "expert_ood": 0.49,
+    "params": {
+     "mass": 1.4,
+     "damping": 0.06,
+     "fmax": 0.8400000000000001,
+     "obstacle_radius": 0.22799999999999998,
+     "delay": 3
+    }
+   },
+   {
+    "s": 1.0,
+    "ood_sr": 0.13666666666666666,
+    "gap": 0.36333333333333334,
+    "expert_ood": 0.39,
+    "params": {
+     "mass": 1.5,
+     "damping": 0.05,
+     "fmax": 0.8,
+     "obstacle_radius": 0.24,
+     "delay": 3
+    }
+   }
+  ],
+  "choice_s": 0.65,
+  "choice_params": {
+   "mass": 1.325,
+   "damping": 0.0675,
+   "fmax": 0.87,
+   "obstacle_radius": 0.219,
+   "delay": 3
+  }
+ },
+ "c03-hold": {
+  "n_ckpts": 6,
+  "id_sr": 0.6691666666666666,
+  "grid": [
+   {
+    "s": 0.05,
+    "ood_sr": 0.5883333333333334,
+    "gap": 0.0808333333333332,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.04,
+     "damping": 0.096,
+     "fmax": 0.788,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.1,
+    "ood_sr": 0.48666666666666664,
+    "gap": 0.18249999999999994,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.08,
+     "damping": 0.092,
+     "fmax": 0.776,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.15,
+    "ood_sr": 0.39666666666666667,
+    "gap": 0.2724999999999999,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.12,
+     "damping": 0.08800000000000001,
+     "fmax": 0.764,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.2,
+    "ood_sr": 0.3025,
+    "gap": 0.3666666666666666,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.1600000000000001,
+     "damping": 0.084,
+     "fmax": 0.752,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.35,
+    "ood_sr": 0.09500000000000001,
+    "gap": 0.5741666666666666,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.28,
+     "damping": 0.07200000000000001,
+     "fmax": 0.7160000000000001,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.5,
+    "ood_sr": 0.015833333333333335,
+    "gap": 0.6533333333333332,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.4,
+     "damping": 0.060000000000000005,
+     "fmax": 0.68,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.65,
+    "ood_sr": 0.0,
+    "gap": 0.6691666666666666,
+    "expert_ood": 0.955,
+    "params": {
+     "mass": 1.52,
+     "damping": 0.048,
+     "fmax": 0.644,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 0.8,
+    "ood_sr": 0.0,
+    "gap": 0.6691666666666666,
+    "expert_ood": 0.7,
+    "params": {
+     "mass": 1.6400000000000001,
+     "damping": 0.036000000000000004,
+     "fmax": 0.6080000000000001,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   },
+   {
+    "s": 1.0,
+    "ood_sr": 0.0,
+    "gap": 0.6691666666666666,
+    "expert_ood": 0.3,
+    "params": {
+     "mass": 1.8,
+     "damping": 0.020000000000000004,
+     "fmax": 0.56,
+     "obstacle_radius": 0.18,
+     "delay": 3
+    }
+   }
+  ],
+  "choice_s": 0.2,
+  "choice_params": {
+   "mass": 1.1600000000000001,
+   "damping": 0.084,
+   "fmax": 0.752,
+   "obstacle_radius": 0.18,
+   "delay": 3
+  }
+ },
+ "c04-delay": {
+  "n_ckpts": 3,
+  "id_sr": 0.7599999999999999,
+  "grid": [
+   {
+    "s": 0.05,
+    "ood_sr": 0.7599999999999999,
+    "gap": 0.0,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 5
+    }
+   },
+   {
+    "s": 0.1,
+    "ood_sr": 0.7599999999999999,
+    "gap": 0.0,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 5
+    }
+   },
+   {
+    "s": 0.15,
+    "ood_sr": 0.7599999999999999,
+    "gap": 0.0,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 5
+    }
+   },
+   {
+    "s": 0.2,
+    "ood_sr": 0.7599999999999999,
+    "gap": 0.0,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 5
+    }
+   },
+   {
+    "s": 0.35,
+    "ood_sr": 0.7599999999999999,
+    "gap": 0.0,
+    "expert_ood": 1.0,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 5
+    }
+   },
+   {
+    "s": 0.5,
+    "ood_sr": 0.24333333333333332,
+    "gap": 0.5166666666666666,
+    "expert_ood": 0.62,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 6
+    }
+   },
+   {
+    "s": 0.65,
+    "ood_sr": 0.24333333333333332,
+    "gap": 0.5166666666666666,
+    "expert_ood": 0.62,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 6
+    }
+   },
+   {
+    "s": 0.8,
+    "ood_sr": 0.24333333333333332,
+    "gap": 0.5166666666666666,
+    "expert_ood": 0.62,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 6
+    }
+   },
+   {
+    "s": 1.0,
+    "ood_sr": 0.24333333333333332,
+    "gap": 0.5166666666666666,
+    "expert_ood": 0.62,
+    "params": {
+     "mass": 1.0,
+     "damping": 0.1,
+     "fmax": 0.8,
+     "obstacle_radius": 0.18,
+     "delay": 6
+    }
+   }
+  ],
+  "choice_s": 1.0,
+  "choice_params": {
+   "mass": 1.0,
+   "damping": 0.1,
+   "fmax": 0.8,
+   "obstacle_radius": 0.18,
+   "delay": 6
+  }
+ }
+}

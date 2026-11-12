@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.sha256 -text
+*.tsv -text
+*.json -text
+survey/sources/** -text
+*.prompt.txt -text

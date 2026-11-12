@@ -1,0 +1,21 @@
+{
+ "attempt": "a1",
+ "ckpt_class": "S2",
+ "ckpt_sha256": "4099594dcd28e4bee8e9349cb901bb1502d29f86a56971cb270184e8d0a59484",
+ "code_version": "43f05e80b1ecfba8",
+ "config_sha256": "732269de7ece4d29",
+ "effort": "medium",
+ "eps_per_round": 16,
+ "exp_id": "main-v1-t0",
+ "hidden_n": 200,
+ "initial_report_episodes": 16,
+ "max_output_tokens": 64000,
+ "model": "claude-sonnet-5-5",
+ "prompt_variant": "full",
+ "protocol": "WSP-Native",
+ "provider": "claude-cli",
+ "rep": 0,
+ "rounds": 4,
+ "run_id": "c03-hold__s2-seed3__sonnet55-medium__r0",
+ "task_id": "c03-hold"
+}

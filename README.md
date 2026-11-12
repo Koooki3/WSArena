@@ -29,4 +29,21 @@ Claude 已完成 Tier-0 和 Meta-World 主批次。GPT 已完成 Native Pilot，
 | [独立复核补充](reports/REVIEW_P8_ADDENDUM.md) | 置信区间、配对检验与运行间波动 |
 | [C3 Tier-0](reports/C3_ESTIMAND_CHECK_T0.md) · [C3 Meta-World](reports/C3_ESTIMAND_CHECK_MW.md) | 任务等权与检查点等权估计量对照 |
 
-本仓库发布研究进展、实验计划及整理后的汇总结果。源码、检查点、运行日志与论文全文留待单独的可复现版本发布。
+## 安装与运行
+
+需要 Python 3.12+。以下命令在 Linux 或 WSL 中从仓库根目录执行。
+
+```bash
+git clone https://github.com/Koooki3/WSArena.git
+cd WSArena
+python3.12 -m venv .venv
+. .venv/bin/activate
+python -m pip install -e '.[dev]'
+python scripts/check_frozen.py
+python scripts/run_experiment.py configs/experiments/smoke-v0.yaml --attempt preview --dry-run
+python -m gpt.tier0 preflight
+```
+
+完整测试和真实脚本对照需要先解包发布页的两份数据归档。
+
+[运行、检查点与复现说明](docs/REPRODUCIBILITY_ZH.md) · [协议与设计](docs/DESIGN_ZH.md) · [预注册](docs/PREREG_ZH.md) · [GPT Tier-0 预注册](gpt/TIER0_PREREG_ZH.md) · [论文 LaTeX 源稿](paper/main.tex)

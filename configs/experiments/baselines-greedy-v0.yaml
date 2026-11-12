@@ -1,0 +1,12 @@
+# Equal-feedback greedy random search (strongest SIMPLE alternative under the same dev-feedback budget). No quota.
+exp_id: baselines-greedy-v0
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 3
+select: {classes: [S1, S2, S3], seeds: [1, 2, 3]}
+arms:
+  - {key: greedy_f02_s01, provider: "scripted:random_greedy", model: scripted-random_greedy, effort: none, kw: {frac: 0.02, scale: 0.1}}
+  - {key: greedy_f05_s02, provider: "scripted:random_greedy", model: scripted-random_greedy, effort: none, kw: {frac: 0.05, scale: 0.2}}

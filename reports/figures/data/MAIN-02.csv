@@ -1,0 +1,17 @@
+0,1,2,3
+c02-avoid/s1-weak_axis/seed2,opus55-medium,0.49250000000000005,0.44
+c02-avoid/s1-weak_axis/seed2,sonnet55-medium,0.0675,0.0
+c02-avoid/s2/seed2,opus55-medium,0.5175000000000001,0.725
+c02-avoid/s2/seed2,sonnet55-medium,0.21749999999999997,0.6950000000000001
+c02-avoid/s3/seed2,opus55-medium,0.13,0.21999999999999997
+c02-avoid/s3/seed2,sonnet55-medium,0.0,0.0
+c03-hold/s1-weak_axis/seed2,opus55-medium,0.4,0.4
+c03-hold/s1-weak_axis/seed2,sonnet55-medium,0.4,0.395
+c03-hold/s2/seed2,opus55-medium,0.44499999999999995,0.44999999999999996
+c03-hold/s2/seed2,sonnet55-medium,0.44999999999999996,0.44999999999999996
+c03-hold/s3/seed2,opus55-medium,0.17500000000000004,0.18000000000000005
+c03-hold/s3/seed2,sonnet55-medium,0.09000000000000002,0.18000000000000005
+c04-delay/s1-weak_axis/seed2,opus55-medium,0.45999999999999996,0.385
+c04-delay/s1-weak_axis/seed2,sonnet55-medium,0.45999999999999996,0.0
+c04-delay/s3/seed2,opus55-medium,0.41000000000000003,0.15000000000000002
+c04-delay/s3/seed2,sonnet55-medium,0.05750000000000005,0.0

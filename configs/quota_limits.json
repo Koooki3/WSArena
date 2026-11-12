@@ -1,0 +1,1 @@
+{"five_hour": 0.90, "seven_day": 0.80, "note": "U12 (2026-11-07): user relaxed the stop thresholds to week 80% / 5h 90% ('周80%或5h90%才停，放宽一些'). Read fresh before every run by run_experiment.py and drive_phase.py; edit only on the user's word."}

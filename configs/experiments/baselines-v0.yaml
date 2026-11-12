@@ -1,0 +1,14 @@
+# Deterministic controls through the SAME protocol/accounting as the LLM arms (no quota used).
+exp_id: baselines-v0
+protocol: WSP-Native            # null/random/oracle go through the Native parser; analytic_ridge is reported as Analytical
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 3
+select: {classes: [S1, S2, S3], seeds: [1, 2, 3]}
+arms:
+  - {key: "null",          provider: "scripted:null",           model: scripted-null,           effort: none, reps: 1}
+  - {key: random5,         provider: "scripted:random",         model: scripted-random,         effort: none}
+  - {key: oracle_restore,  provider: "scripted:oracle_restore", model: scripted-oracle_restore, effort: none, reps: 1}
+  - {key: analytic_ridge,  provider: "scripted:analytic_ridge",  model: scripted-analytic_ridge,  effort: none, reps: 1}

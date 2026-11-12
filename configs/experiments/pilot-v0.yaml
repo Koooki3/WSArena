@@ -1,0 +1,16 @@
+# E4 Pilot (minimal tier): 4 arms x {c01,c02} x {S1 weak_axis, S2 natural} x seed1 x 1 rep x R=4 = 16 runs / 64 turns.
+# Pilot output is used ONLY for cost, task-band and engineering decisions (K-S3-11); never as unselected main data.
+exp_id: pilot-v0
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: 32000        # confirm with E3 before running
+select: {tasks: [c01-reach, c02-avoid], classes: [S1, S2], kinds: [weak_axis, natural], seeds: [1]}
+arms:
+  - {key: sonnet55-medium, provider: claude-cli, model: claude-sonnet-5-5, effort: medium}
+  - {key: sonnet55-high,   provider: claude-cli, model: claude-sonnet-5-5, effort: high}
+  - {key: opus55-medium,   provider: claude-cli, model: claude-opus-5-5,   effort: medium}
+  - {key: opus55-high,     provider: claude-cli, model: claude-opus-5-5,   effort: high}

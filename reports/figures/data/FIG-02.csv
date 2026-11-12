@@ -1,0 +1,6 @@
+level,name,checkpoints,implemented
+L0,Weight reading,open-ended identification,False
+L1,Weight synthesis,S0 zero network,True
+L2,Weight repair,S1 planted · S2 natural,True
+L3,Weight enhancement,S3 healthy policy,True
+L4,Generalisation,hidden OOD · reparameterisation,True

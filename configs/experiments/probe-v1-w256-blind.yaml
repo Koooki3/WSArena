@@ -1,0 +1,29 @@
+# P6 comparator, width 256: same prompt without probes (blind Native). FROZEN with PREREG §15.
+exp_id: probe-v1-w256-blind
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: 64000
+order: class_interleave
+cells:
+- ckpt_ids:
+  - c02-avoid@w256/s1-weak_axis/seed2
+  - c02-avoid@w256/s2/seed2
+  - c02-avoid@w256/s3/seed2
+  - c02-avoid@w256/s1-weak_axis/seed3
+  - c02-avoid@w256/s2/seed3
+  - c02-avoid@w256/s3/seed3
+arms:
+- key: sonnet55-medium-blind
+  provider: claude-cli
+  model: claude-sonnet-5-5
+  effort: medium
+  prompt_variant: blind
+- key: opus55-medium-blind
+  provider: claude-cli
+  model: claude-opus-5-5
+  effort: medium
+  prompt_variant: blind

@@ -1,0 +1,8 @@
+task,S0_built,S1_built,S2_built,S3_built,S0_infeasible,S1_infeasible,S2_infeasible,S3_infeasible
+c01-reach,1,5,3,3,0,4,0,0
+c02-avoid,1,8,4,4,0,2,0,0
+c03-hold,1,7,4,4,0,2,0,0
+c04-delay,1,10,0,3,0,0,3,0
+mw-push,1,7,3,3,0,2,0,0
+mw-pickplace,1,6,3,3,0,3,0,0
+mw-peginsert,1,6,2,3,0,3,1,0

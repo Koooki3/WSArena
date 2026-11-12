@@ -1,0 +1,11 @@
+# One-parameter control (scale W3 on top of the best-so-far weights, equal feedback budget). No quota.
+exp_id: baselines-gain-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+select: {classes: [S1, S2, S3], seeds: [1, 2, 3], tasks: [c01-reach, c02-avoid, c03-hold, c04-delay]}
+arms:
+  - {key: gain_greedy, provider: "scripted:gain_greedy", model: scripted-gain_greedy, effort: none}

@@ -1,0 +1,5 @@
+value,metric,note
+98,checkpoints built,"20 infeasible, recorded"
+961,control-arm runs,all verified; 0 interrupted
+240,independent checks,0 mismatches vs run.json
+61,test functions,pytest green · contract OK

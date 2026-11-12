@@ -1,0 +1,19 @@
+.venv/
+venvs/
+external/
+vendor/*/.git/
+artifacts/
+wsarena.egg-info/
+__pycache__/
+.pytest_cache/
+*.pyc
+# Raw runs and quota logs stay local. Released reference files are explicitly tracked.
+runs/*
+!runs/SUMMARY/
+runs/SUMMARY/isolation-probe-*.json
+tools/tectonic/
+paper/*.pdf
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg

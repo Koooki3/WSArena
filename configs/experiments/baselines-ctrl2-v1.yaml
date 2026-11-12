@@ -1,0 +1,12 @@
+# A2 controls: per-tensor gain search (6-ish knobs, dev feedback) and a deterministic compiled PD controller. No quota.
+exp_id: baselines-ctrl2-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+select: {classes: [S1, S2, S3], seeds: [1, 2, 3], tasks: [c01-reach, c02-avoid, c03-hold, c04-delay]}
+arms:
+  - {key: tensor_gain_greedy, provider: "scripted:tensor_gain_greedy", model: scripted-tensor_gain_greedy, effort: none}
+  - {key: compiled_pd,        provider: "scripted:compiled_pd",        model: scripted-compiled_pd,        effort: none}

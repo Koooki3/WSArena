@@ -1,0 +1,13 @@
+metric,arm,n,mean,ci_lo,ci_hi
+P(valid patch),Sonnet 5.5 · medium,8,0.34375,0.1875,0.5625
+P(valid patch),Sonnet 5.5 · high,8,0.53125,0.34375,0.75
+P(valid patch),Opus 5.5 · medium,8,0.5625,0.375,0.78125
+P(valid patch),Opus 5.5 · high,8,0.53125,0.34375,0.71875
+P(improve | valid),Sonnet 5.5 · medium,7,1.0,1.0,1.0
+P(improve | valid),Sonnet 5.5 · high,8,1.0,1.0,1.0
+P(improve | valid),Opus 5.5 · medium,8,0.875,0.625,1.0
+P(improve | valid),Opus 5.5 · high,8,1.0,1.0,1.0
+E[ΔSR | valid],Sonnet 5.5 · medium,7,0.28785714285714287,0.16071428571428573,0.42
+E[ΔSR | valid],Sonnet 5.5 · high,8,0.33625000000000005,0.22625,0.44375
+E[ΔSR | valid],Opus 5.5 · medium,8,0.39625000000000005,0.21937500000000004,0.55875
+E[ΔSR | valid],Opus 5.5 · high,8,0.42500000000000004,0.301875,0.54375

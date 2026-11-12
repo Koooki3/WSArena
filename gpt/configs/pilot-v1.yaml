@@ -1,0 +1,34 @@
+exp_id: gpt-pilot-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: null
+order: class_interleave
+cells:
+- ckpt_ids:
+  - c02-avoid/s1-weak_axis/seed1
+  - c04-delay/s1-weak_axis/seed1
+arms:
+- key: gpt-sol61-medium
+  provider: codex-cli
+  model: gpt-6.1-sol
+  effort: medium
+- key: gpt-sol61-high
+  provider: codex-cli
+  model: gpt-6.1-sol
+  effort: high
+- key: gpt-astra6-medium
+  provider: codex-cli
+  model: gpt-6-astra
+  effort: medium
+- key: gpt-astra6-high
+  provider: codex-cli
+  model: gpt-6-astra
+  effort: high
+source_config: configs/experiments/main-v1-t0.yaml
+source_sha256: 732269de7ece4d29552e2539c0b8e9854ef09a22d69f45778abbbbc80c6ced06
+status: candidate_not_preregistered
+output_cap_policy: U14

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "native_binary": "/absolute/path/to/codex",
+  "cli_version": "codex-cli 0.167.0-alpha.3.2",
+  "binary_sha256": "c8242fc9e1bac7c6d661a228cecfaf50e6db74da219e4a9ca8912827e11607f0",
+  "archive_sha256": "9eba7c8728428e069ef8f61fdea83304acf51302e5f816f5d2c51cc163bee54e",
+  "upstream_commit": "c40729ea5cf8e947481b130c59807273eda2f8e9",
+  "isolated_codex_home": "/absolute/path/to/isolated-auth-home",
+  "neutral_tmp_root": "/absolute/path/to/neutral-workdirs",
+  "allowed_runs_root": "/absolute/path/to/wsarena/runs",
+  "isolation_verified": false,
+  "tools_table_verified": false,
+  "live_enabled": false,
+  "max_output_tokens_control": "unsupported_by_pinned_codex_exec",
+  "authentication": "not_provisioned; no credentials read, copied or symlinked",
+  "output_cap_policy": "U14",
+  "output_cap_requested": null,
+  "output_cap_effective": "unverified",
+  "output_token_smoke_verified": false
+}

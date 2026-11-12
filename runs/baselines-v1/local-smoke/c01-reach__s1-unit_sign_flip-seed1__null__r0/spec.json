@@ -1,0 +1,21 @@
+{
+ "attempt": "local-smoke",
+ "ckpt_class": "S1",
+ "ckpt_sha256": "8d6720d36a86e67513a0126f1116fe295ca3b16fe4a0dcc3af746f1d6ae55363",
+ "code_version": "1e346ffa23f1491f",
+ "config_sha256": "bb4fa83dc47ed0b2",
+ "effort": "none",
+ "eps_per_round": 16,
+ "exp_id": "baselines-v1",
+ "hidden_n": 200,
+ "initial_report_episodes": 16,
+ "max_output_tokens": null,
+ "model": "scripted-null",
+ "prompt_variant": "full",
+ "protocol": "WSP-Native",
+ "provider": "scripted:null",
+ "rep": 0,
+ "rounds": 4,
+ "run_id": "c01-reach__s1-unit_sign_flip-seed1__null__r0",
+ "task_id": "c01-reach"
+}

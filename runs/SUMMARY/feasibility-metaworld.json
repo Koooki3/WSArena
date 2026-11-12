@@ -1,0 +1,50 @@
+{
+ "reach-v3": {
+  "n_samples": 20000,
+  "collect_s": 6.4,
+  "bc": [
+   {
+    "epochs": 20,
+    "sr": 1.0,
+    "eval_s_per_30ep": 4.5,
+    "steps_per_s": 3354
+   },
+   {
+    "epochs": 100,
+    "sr": 1.0,
+    "eval_s_per_30ep": 4.5,
+    "steps_per_s": 3349
+   },
+   {
+    "epochs": 400,
+    "sr": 1.0,
+    "eval_s_per_30ep": 4.6,
+    "steps_per_s": 3279
+   }
+  ]
+ },
+ "push-v3": {
+  "n_samples": 20000,
+  "collect_s": 13.3,
+  "bc": [
+   {
+    "epochs": 20,
+    "sr": 0.3333333333333333,
+    "eval_s_per_30ep": 8.7,
+    "steps_per_s": 1732
+   },
+   {
+    "epochs": 100,
+    "sr": 1.0,
+    "eval_s_per_30ep": 9.8,
+    "steps_per_s": 1537
+   },
+   {
+    "epochs": 400,
+    "sr": 1.0,
+    "eval_s_per_30ep": 9.7,
+    "steps_per_s": 1551
+   }
+  ]
+ }
+}

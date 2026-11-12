@@ -1,0 +1,27 @@
+{
+ "audit": {
+  "isolation_ok": null,
+  "n_tool_events": 0,
+  "notes": "",
+  "tool_free": true
+ },
+ "cli_version": null,
+ "effort": "none",
+ "error": null,
+ "latency_s": 0.0,
+ "model": "scripted-null",
+ "provider": "scripted",
+ "raw_path": null,
+ "status": "ok",
+ "stop_reason": null,
+ "system_sha256": "b8a5d51f11d62576e43005a35c4db74c365ace7db42076e7bf4e03c7d949076c",
+ "text": "Scripted editor 'null'.\n```edits\n\n```\n",
+ "usage": {
+  "cache_creation_tokens": null,
+  "cache_read_tokens": null,
+  "cost_usd": null,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "thinking_tokens": null
+ }
+}

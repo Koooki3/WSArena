@@ -1,0 +1,26 @@
+[project]
+name = "wsarena"
+version = "0.1.0"
+description = "WSArena: a controlled benchmark for LLM-driven weight-space programming"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "pydantic>=2.7",
+  "pyyaml>=6",
+  "pandas>=2.2",
+  "statsmodels>=0.14",
+  "matplotlib>=3.9",
+  "zstandard>=0.22",
+  "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["wsarena*", "gpt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

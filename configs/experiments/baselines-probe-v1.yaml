@@ -1,0 +1,17 @@
+# P6 probe track: deterministic controls on the large width variants (c02-avoid@w256, @w512; seeds 2,3), same protocol and accounting. No quota.
+exp_id: baselines-probe-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 3
+select: {classes: [S1, S2, S3], seeds: [2, 3], tasks: ["c02-avoid@w256", "c02-avoid@w512"]}
+arms:
+  - {key: "null",          provider: "scripted:null",           model: scripted-null,           effort: none, reps: 1}
+  - {key: random5,         provider: "scripted:random",         model: scripted-random,         effort: none}
+  - {key: oracle_restore,  provider: "scripted:oracle_restore", model: scripted-oracle_restore, effort: none, reps: 1}
+  - {key: analytic_ridge,  provider: "scripted:analytic_ridge",  model: scripted-analytic_ridge,  effort: none, reps: 1}
+  - {key: gain_greedy,     provider: "scripted:gain_greedy",    model: scripted-gain_greedy,    effort: none, reps: 1}
+  - {key: tensor_gain_greedy, provider: "scripted:tensor_gain_greedy", model: scripted-tensor_gain_greedy, effort: none, reps: 1}
+  - {key: greedy_f02_s01,  provider: "scripted:random_greedy", model: scripted-random_greedy, effort: none, kw: {frac: 0.02, scale: 0.1}, reps: 1}

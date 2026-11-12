@@ -1,0 +1,15 @@
+# Pilot v1 (extension, Sonnet half): harder / unseen cells to test discrimination and truncation: c03-hold S2, c04-delay S1,
+# and S3 (healthy) on c02/c03. Same protocol/contract as pilot-v0. Pilot data: cost, bands, engineering only; not main data.
+exp_id: pilot-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 200
+reps: 1
+max_output_tokens: 32000
+cells:
+  - ckpt_ids: ["c03-hold/s2/seed1", "c04-delay/s1-weak_axis/seed1", "c03-hold/s3/seed1", "c02-avoid/s3/seed1"]
+arms:
+  - {key: sonnet55-medium, provider: claude-cli, model: claude-sonnet-5-5, effort: medium}
+  - {key: sonnet55-high,   provider: claude-cli, model: claude-sonnet-5-5, effort: high}

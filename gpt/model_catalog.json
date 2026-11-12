@@ -1,0 +1,82 @@
+{
+  "models": [
+    {
+      "experimental_supported_tools": [],
+      "apply_patch_tool_type": null,
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "base_instructions": "",
+      "model_messages": null,
+      "context_window": 500000,
+      "include_apps_usage_instructions": false,
+      "input_modalities": [
+        "text"
+      ],
+      "visibility": "list",
+      "display_name": "GPT-6.1-Sol",
+      "slug": "gpt-6.1-sol",
+      "supported_reasoning_levels": [
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "high",
+          "description": "Greater reasoning depth for complex problems"
+        }
+      ],
+      "include_skills_usage_instructions": false,
+      "tool_mode": "direct",
+      "node_repl_disabled": true,
+      "supports_search_tool": false,
+      "default_reasoning_level": "medium",
+      "supported_in_api": true,
+      "include_plugin_usage_instructions": false,
+      "support_verbosity": true,
+      "multi_agent_version": "disabled",
+      "priority": 1,
+      "shell_type": "disabled"
+    },
+    {
+      "experimental_supported_tools": [],
+      "apply_patch_tool_type": null,
+      "truncation_policy": {
+        "mode": "tokens",
+        "limit": 10000
+      },
+      "base_instructions": "",
+      "model_messages": null,
+      "context_window": 272000,
+      "include_apps_usage_instructions": false,
+      "input_modalities": [
+        "text"
+      ],
+      "visibility": "list",
+      "display_name": "GPT-6-Astra",
+      "slug": "gpt-6-astra",
+      "supported_reasoning_levels": [
+        {
+          "effort": "medium",
+          "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+          "effort": "high",
+          "description": "Greater reasoning depth for complex problems"
+        }
+      ],
+      "include_skills_usage_instructions": false,
+      "tool_mode": "direct",
+      "node_repl_disabled": true,
+      "supports_search_tool": false,
+      "default_reasoning_level": "medium",
+      "supported_in_api": true,
+      "include_plugin_usage_instructions": false,
+      "support_verbosity": true,
+      "multi_agent_version": "disabled",
+      "priority": 2,
+      "shell_type": "disabled"
+    }
+  ]
+}

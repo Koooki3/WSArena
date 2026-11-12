@@ -1,0 +1,6 @@
+stage
+"Sealed base checkpoint $\theta_0$ (sha256, read-only) class S0–S3"
+Editor reads the weights as text + feedback JSON (LLM or control)
+Reply with ONE ```edits``` block (WEP-1; only the last block is read)
+Deterministic apply parse · skip count · parameter diff statistics
+Development feedback: 16 fresh episodes / round SR · failure types

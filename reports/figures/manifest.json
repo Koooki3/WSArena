@@ -1,0 +1,513 @@
+{
+ "generated_at": "2026-11-07T06:09:15+08:00",
+ "source_hash": "43f05e80b1ecfba8",
+ "contract_version": 11,
+ "figures": [
+  {
+   "id": "FIG-01",
+   "title": "WSP-8 evaluation pipeline",
+   "caption_zh": "WSP-8 评测流程：密封基线检查点 → 编辑者读权重文本并回复一个 edits 块 → 确定性应用 → 开发集反馈（循环 R 轮）→ 冻结最终权重 → 隐藏集（ID/OOD）配对评测。服务端强制预算、工具审计与哈希校验，失败留在分母。",
+   "group": "overview",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-01.png",
+     "reports/figures/light/FIG-01.pdf",
+     "reports/figures/light/FIG-01.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-01.png",
+     "reports/figures/dark/FIG-01.pdf",
+     "reports/figures/dark/FIG-01.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "schematic",
+   "table_view": "reports/figures/data/FIG-01.csv",
+   "table_sha256": "30190cb7eb7650f7"
+  },
+  {
+   "id": "FIG-02",
+   "title": "Task formalisation and capability ladder",
+   "caption_zh": "WSArena 任务实例的形式化定义，以及五级能力 L0–L4 与检查点类别、实现状态的对应（✓ 已实现并测试，○ 计划）。",
+   "group": "overview",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-02.png",
+     "reports/figures/light/FIG-02.pdf",
+     "reports/figures/light/FIG-02.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-02.png",
+     "reports/figures/dark/FIG-02.pdf",
+     "reports/figures/dark/FIG-02.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "schematic",
+   "table_view": "reports/figures/data/FIG-02.csv",
+   "table_sha256": "ba6816a9dc350239"
+  },
+  {
+   "id": "FIG-03",
+   "title": "Layered failure attribution",
+   "caption_zh": "诊断式失败归因（参照 VABAR 的诊断执行流）：每个失败归到最早能解释后续结果的层——回合层（供应商状态）、补丁层（解析与应用）、效果层（行为变化与逐 episode 失败类型）。下方计数来自 588 个脚本对照 run 的 2,352 个回合。",
+   "group": "overview",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-03.png",
+     "reports/figures/light/FIG-03.pdf",
+     "reports/figures/light/FIG-03.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-03.png",
+     "reports/figures/dark/FIG-03.pdf",
+     "reports/figures/dark/FIG-03.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines",
+   "table_view": "reports/figures/data/FIG-03.csv",
+   "table_sha256": "3911fdd06c5b5612"
+  },
+  {
+   "id": "FIG-04",
+   "title": "Benchmark coverage matrix",
+   "caption_zh": "检查点覆盖矩阵：任务（行）× 检查点类别（列），格内为“可用数”，斜线数字为按 SR 带筛选未能构造出的不可行数；右侧给出观测/动作维度与参数量。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-04.png",
+     "reports/figures/light/FIG-04.pdf",
+     "reports/figures/light/FIG-04.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-04.png",
+     "reports/figures/dark/FIG-04.pdf",
+     "reports/figures/dark/FIG-04.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "manifest",
+   "table_view": "reports/figures/data/FIG-04.csv",
+   "table_sha256": "bfa27489a8f95bb6"
+  },
+  {
+   "id": "FIG-05",
+   "title": "Start-state difficulty of the checkpoints",
+   "caption_zh": "未编辑检查点的隐藏成功率（实心=ID，空心=OOD；每点一个检查点，短横线为均值）。S1/S2 起点约 0.3–0.55，S3 约 0.7–0.9；OOD 起点整体低得多——这是留给编辑的空间。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-05.png",
+     "reports/figures/light/FIG-05.pdf",
+     "reports/figures/light/FIG-05.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-05.png",
+     "reports/figures/dark/FIG-05.pdf",
+     "reports/figures/dark/FIG-05.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-05.csv",
+   "table_sha256": "f7b36d13a0450dc4"
+  },
+  {
+   "id": "FIG-06",
+   "title": "Control arms: hidden ID gain",
+   "caption_zh": "脚本对照臂在隐藏 ID 上的成功率增益 ΔSR（点=检查点，粗线=按检查点聚类的 bootstrap 95% CI，灰带=判定带宽 ±0.10）。闭式解在 S1 上≈神谕；S2 上不稳；同等反馈预算的随机搜索≈0。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-06.png",
+     "reports/figures/light/FIG-06.pdf",
+     "reports/figures/light/FIG-06.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-06.png",
+     "reports/figures/dark/FIG-06.pdf",
+     "reports/figures/dark/FIG-06.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-06.csv",
+   "table_sha256": "ff0fb68e0d1b975b"
+  },
+  {
+   "id": "FIG-07",
+   "title": "Control arms: hidden OOD gain",
+   "caption_zh": "同 FIG-06，但为隐藏 OOD 上的增益。OOD 偏移已在 select 命名空间上校准；c02-avoid 的 S2 起点 OOD 成功率仍为 0（该子集无分辨力）。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-07.png",
+     "reports/figures/light/FIG-07.pdf",
+     "reports/figures/light/FIG-07.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-07.png",
+     "reports/figures/dark/FIG-07.pdf",
+     "reports/figures/dark/FIG-07.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-07.csv",
+   "table_sha256": "14566f3effa11ab8"
+  },
+  {
+   "id": "FIG-08",
+   "title": "Gain by task, class and control arm",
+   "caption_zh": "ΔSR（ID）热图：行=任务×类别，列=对照臂；蓝=提升，红=下降，灰=0；格内为均值，括号为检查点数。可以读出：解析岭回归在 c03-hold 的 S2 上显著为负（−0.36）。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-08.png",
+     "reports/figures/light/FIG-08.pdf",
+     "reports/figures/light/FIG-08.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-08.png",
+     "reports/figures/dark/FIG-08.pdf",
+     "reports/figures/dark/FIG-08.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-08.csv",
+   "table_sha256": "7a46a08e44c24871"
+  },
+  {
+   "id": "FIG-09",
+   "title": "Recovery versus Regression",
+   "caption_zh": "可靠性：Recovery=原本失败的 episode 被修好的比例；Regression=原本成功的 episode 被破坏的比例。理想点在左上角。闭式解在 S2 上同时高 Regression（0.50），而 S1 上接近理想。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-09.png",
+     "reports/figures/light/FIG-09.pdf",
+     "reports/figures/light/FIG-09.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-09.png",
+     "reports/figures/dark/FIG-09.pdf",
+     "reports/figures/dark/FIG-09.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-09.csv",
+   "table_sha256": "80774b904aa56071"
+  },
+  {
+   "id": "FIG-10",
+   "title": "Evaluation noise floor",
+   "caption_zh": "噪声尺度：同一检查点在 5 个互不相交的 200-episode 集合上的成功率标准差（每点一个检查点；虚线=二项上界 0.035）。判定带宽 δ=0.10 高于 2σ 的典型值，故安全。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-10.png",
+     "reports/figures/light/FIG-10.pdf",
+     "reports/figures/light/FIG-10.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-10.png",
+     "reports/figures/dark/FIG-10.pdf",
+     "reports/figures/dark/FIG-10.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "noise_floor.json",
+   "table_view": "reports/figures/data/FIG-10.csv",
+   "table_sha256": "bae66f28394d66c1"
+  },
+  {
+   "id": "FIG-11",
+   "title": "OOD shift calibration",
+   "caption_zh": "OOD 偏移强度校准（只用 select 命名空间，不碰隐藏集）：横轴为偏移强度 s（0=同分布，1=v1 的最大偏移），纵轴为 S2∪S3 检查点的平均成功率；竖线=选定值，实线=ID 基线。规则：取使 OOD 成功率 ≥0.20 且 ID−OOD ≥0.15 的最大 s。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-11.png",
+     "reports/figures/light/FIG-11.pdf",
+     "reports/figures/light/FIG-11.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-11.png",
+     "reports/figures/dark/FIG-11.pdf",
+     "reports/figures/dark/FIG-11.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "ood_calibration.json",
+   "table_view": "reports/figures/data/FIG-11.csv",
+   "table_sha256": "83b1bc60e58f597b"
+  },
+  {
+   "id": "FIG-12",
+   "title": "What the unedited policies get wrong",
+   "caption_zh": "未编辑检查点在隐藏 ID 上的失败类型构成（占失败 episode 的比例，规则分型，不是编辑者自评）。S1/S2 以 stalled_far / drift_far / collision 为主，说明故障是可诊断的。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-12.png",
+     "reports/figures/light/FIG-12.pdf",
+     "reports/figures/light/FIG-12.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-12.png",
+     "reports/figures/dark/FIG-12.pdf",
+     "reports/figures/dark/FIG-12.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-12.csv",
+   "table_sha256": "53f1d54d3ac7d0ae"
+  },
+  {
+   "id": "FIG-13",
+   "title": "Edit footprint versus gain",
+   "caption_zh": "补丁足迹：每个 run 一个点，横轴为改动参数占比（对数），纵轴为隐藏 ID 的 ΔSR。神谕只改约 1% 参数就得到最大增益；随机扰动改动最多且有害。形状=检查点类别。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-13.png",
+     "reports/figures/light/FIG-13.pdf",
+     "reports/figures/light/FIG-13.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-13.png",
+     "reports/figures/dark/FIG-13.pdf",
+     "reports/figures/dark/FIG-13.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1",
+   "table_view": "reports/figures/data/FIG-13.csv",
+   "table_sha256": "964262a97ddd5fea"
+  },
+  {
+   "id": "FIG-14",
+   "title": "Case study: one planted fault, three outcomes",
+   "caption_zh": "案例（c01-reach，S1 weak_axis 植入故障，隐藏 ID 前 12 个 episode）：上排=三个策略的轨迹（○起点，◆目标；实线=成功，×=失败）；下排=补丁相对基线的输出层 W3 差异。神谕只改被腐蚀的那一列；闭式解重写整个输出层。",
+   "group": "case",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-14.png",
+     "reports/figures/light/FIG-14.pdf",
+     "reports/figures/light/FIG-14.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-14.png",
+     "reports/figures/dark/FIG-14.pdf",
+     "reports/figures/dark/FIG-14.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "baselines-v1 + checkpoint store",
+   "table_view": "reports/figures/data/FIG-14.csv",
+   "table_sha256": "59b12bdfb7a22aea"
+  },
+  {
+   "id": "FIG-15",
+   "title": "Validity and reproducibility record",
+   "caption_zh": "工程与可复现性记录：关键计数（检查点、对照臂 run、独立复算、测试）与契约版本时间线（每次修订的原因，旧结果保留为证据）。",
+   "group": "process",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-15.png",
+     "reports/figures/light/FIG-15.pdf",
+     "reports/figures/light/FIG-15.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-15.png",
+     "reports/figures/dark/FIG-15.pdf",
+     "reports/figures/dark/FIG-15.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "repo state",
+   "table_view": "reports/figures/data/FIG-15.csv",
+   "table_sha256": "fa30239e498eb71a"
+  },
+  {
+   "id": "FIG-16",
+   "title": "Official benchmark feasibility: Meta-World",
+   "caption_zh": "官方基准可行性（Meta-World）：(a) 行为克隆策略成功率随训练轮数——reach 迅速饱和，push 有可利用的过渡区；(b) 已构造的 Meta-World 检查点在 select 上的成功率与目标区间。",
+   "group": "benchmark",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-16.png",
+     "reports/figures/light/FIG-16.pdf",
+     "reports/figures/light/FIG-16.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-16.png",
+     "reports/figures/dark/FIG-16.pdf",
+     "reports/figures/dark/FIG-16.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "feasibility-metaworld.json",
+   "table_view": "reports/figures/data/FIG-16.csv",
+   "table_sha256": "548113606d09b6c4"
+  },
+  {
+   "id": "FIG-17",
+   "title": "LLM weight programming versus conventionally trained networks",
+   "caption_zh": "效率前沿：横轴为墙钟时间（对数），纵轴为隐藏 ID 的 ΔSR。灰色=训练参照（方块=专家标签的行为克隆微调，三角=无标签的进化策略；点=各检查点均值）；彩色=Claude Pilot 的 run（蓝=Sonnet，橙=Opus，实心=high）。训练按 CPU 秒计，LLM 按提供方延迟计；训练便宜约 3–4 个数量级（金钱），但需要专家标签，而无标签的 ES 在同等交互预算下远不如 LLM。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-17.png",
+     "reports/figures/light/FIG-17.pdf",
+     "reports/figures/light/FIG-17.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-17.png",
+     "reports/figures/dark/FIG-17.pdf",
+     "reports/figures/dark/FIG-17.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "trained-baselines + pilot runs",
+   "table_view": "reports/figures/data/FIG-17.csv",
+   "table_sha256": "c27081ceefff8c74"
+  },
+  {
+   "id": "FIG-18",
+   "title": "Robustness to out-of-distribution shift (OOD curves)",
+   "caption_zh": "OOD 曲线（A7）：横轴为 OOD 偏移强度 λ（0=同分布参数，1=校准的 OOD 划分，2=两倍偏移），纵轴为编辑后的隐藏成功率（实线），灰色虚线=未编辑基线。同一批隐藏 OOD episode 上评测。基线随偏移崩溃，所以增益随偏移变大要结合基线读；Opus 的收益在 λ≈1 最高，Sonnet 在 S1 上随偏移单调下降。",
+   "group": "baselines",
+   "files": {
+    "light": [
+     "reports/figures/light/FIG-18.png",
+     "reports/figures/light/FIG-18.pdf",
+     "reports/figures/light/FIG-18.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/FIG-18.png",
+     "reports/figures/dark/FIG-18.pdf",
+     "reports/figures/dark/FIG-18.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "ood-curves.csv",
+   "table_view": "reports/figures/data/FIG-18.csv",
+   "table_sha256": "cbd541d7a7597a55"
+  },
+  {
+   "id": "LLM-01",
+   "title": "Claude arms: hidden ID gain by checkpoint class",
+   "caption_zh": "【待数据】Claude 四个臂（Sonnet/Opus × medium/high）在隐藏 ID 上的 ΔSR（点=检查点，粗线=聚类 bootstrap 95% CI）；虚线=闭式解（特权）均值，灰带=判定带宽。",
+   "group": "llm",
+   "files": {
+    "light": [
+     "reports/figures/light/LLM-01.png",
+     "reports/figures/light/LLM-01.pdf",
+     "reports/figures/light/LLM-01.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/LLM-01.png",
+     "reports/figures/dark/LLM-01.pdf",
+     "reports/figures/dark/LLM-01.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "LLM runs",
+   "table_view": "reports/figures/data/LLM-01.csv",
+   "table_sha256": "bb3efa2434cca2ca"
+  },
+  {
+   "id": "LLM-02",
+   "title": "Decomposing the gain: valid patch × improvement × size",
+   "caption_zh": "【待数据】把 ΔSR 分解为 P(提交合法补丁)、P(改善 | 合法)、E[ΔSR | 合法]，区分“没写出补丁”“补丁无用”“补丁有用”；推理强度是否单调看这三项而不是只看总分。",
+   "group": "llm",
+   "files": {
+    "light": [
+     "reports/figures/light/LLM-02.png",
+     "reports/figures/light/LLM-02.pdf",
+     "reports/figures/light/LLM-02.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/LLM-02.png",
+     "reports/figures/dark/LLM-02.pdf",
+     "reports/figures/dark/LLM-02.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "LLM runs",
+   "table_view": "reports/figures/data/LLM-02.csv",
+   "table_sha256": "86c4c4e0817da65e"
+  },
+  {
+   "id": "LLM-03",
+   "title": "Cost versus gain",
+   "caption_zh": "【待数据】每个 run 的输出 token（对数）与 ΔSR：同一增益下谁更省；高推理强度是否把预算花在了思考而不是补丁上。",
+   "group": "llm",
+   "files": {
+    "light": [
+     "reports/figures/light/LLM-03.png",
+     "reports/figures/light/LLM-03.pdf",
+     "reports/figures/light/LLM-03.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/LLM-03.png",
+     "reports/figures/dark/LLM-03.pdf",
+     "reports/figures/dark/LLM-03.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "LLM runs",
+   "table_view": "reports/figures/data/LLM-03.csv",
+   "table_sha256": "357b9c82805090a2"
+  },
+  {
+   "id": "LLM-04",
+   "title": "Gain across editing rounds",
+   "caption_zh": "【待数据】开发集成功率随编辑轮次的变化（0=未编辑的初始报告；均值与 95% CI）：对应 VABAR 的“零样本 vs 两轮反馈后”，这里给出每一轮的曲线。",
+   "group": "llm",
+   "files": {
+    "light": [
+     "reports/figures/light/LLM-04.png",
+     "reports/figures/light/LLM-04.pdf",
+     "reports/figures/light/LLM-04.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/LLM-04.png",
+     "reports/figures/dark/LLM-04.pdf",
+     "reports/figures/dark/LLM-04.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "LLM runs",
+   "table_view": "reports/figures/data/LLM-04.csv",
+   "table_sha256": "416d6de4ca8cd4de"
+  },
+  {
+   "id": "LLM-05",
+   "title": "Where editing fails: patch status per round",
+   "caption_zh": "【待数据】每个臂各轮次的补丁状态构成（合法且改变权重 / 合法但未改 / 空块 / 无块 / 全部被跳过）：失败留在分母里，并按“最早的解释层”归类。",
+   "group": "llm",
+   "files": {
+    "light": [
+     "reports/figures/light/LLM-05.png",
+     "reports/figures/light/LLM-05.pdf",
+     "reports/figures/light/LLM-05.svg"
+    ],
+    "dark": [
+     "reports/figures/dark/LLM-05.png",
+     "reports/figures/dark/LLM-05.pdf",
+     "reports/figures/dark/LLM-05.svg"
+    ]
+   },
+   "status": "rendered",
+   "data_note": "LLM runs",
+   "table_view": "reports/figures/data/LLM-05.csv",
+   "table_sha256": "95903ad609096e65"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+# Meta-World official tier: all control arms through the same protocol (run inside venvs/metaworld). No quota.
+# hidden_n=100 (episodes are ~100x costlier than Tier-0); base-checkpoint hidden evaluations are cached; no-op arms reuse them.
+exp_id: baselines-mwpeg-v1
+protocol: WSP-Native
+rounds: 4
+eps_per_round: 16
+initial_report_episodes: 16
+hidden_n: 100
+reps: 2
+select: {classes: [S1, S2, S3], seeds: [1, 2, 3], tasks: [mw-peginsert]}
+arms:
+  - {key: "null",         provider: "scripted:null",           model: scripted-null,           effort: none, reps: 1}
+  - {key: random5,        provider: "scripted:random",         model: scripted-random,         effort: none}
+  - {key: greedy_f02_s01, provider: "scripted:random_greedy",  model: scripted-random_greedy,  effort: none, kw: {frac: 0.02, scale: 0.1}}
+  - {key: gain_greedy,    provider: "scripted:gain_greedy",    model: scripted-gain_greedy,    effort: none}
+  - {key: analytic_ridge, provider: "scripted:analytic_ridge", model: scripted-analytic_ridge, effort: none, reps: 1}
+  - {key: oracle_restore, provider: "scripted:oracle_restore", model: scripted-oracle_restore, effort: none, reps: 1}

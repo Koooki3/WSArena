@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use WSArena, please cite it as below."
+title: "WSArena: a benchmark for language-model weight-space programming"
+type: software
+version: 0.1.0-draft
+authors:
+  - name: "(filled at release)"
+license: "(chosen by the owner at release; see docs/release/LICENSE_CHOICE.md)"
+repository-code: "(set at release)"
